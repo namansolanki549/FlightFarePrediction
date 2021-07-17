@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 from flask_cors import cross_origin
 import pickle
 import pandas as pd
+import sklearn
 
 app = Flask(__name__)
 model = pickle.load(open("flight_rf.pkl", "rb"))
